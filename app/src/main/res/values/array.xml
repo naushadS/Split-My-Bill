@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="currency_list">
+        <item>Rupees</item>
+        <item>Dollars</item>
+        <item>Yen</item>
+        <item>Euro</item>
+    </string-array>
+
+    <string-array name="currency_listValues">
+        <item>₹</item>
+        <item>$</item>
+        <item>¥</item>
+        <item>€</item>
+    </string-array>
+</resources>

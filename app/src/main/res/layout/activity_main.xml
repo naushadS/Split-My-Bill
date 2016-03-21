@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context="in.naushad.splitmybill.MainActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="20sp"
+        android:id="@+id/etBillValue0"
+        >
+        <EditText
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/etBillValue"
+            android:hint="Enter the Bill Amount"
+            android:singleLine="true"
+            android:textSize="20sp"
+            android:inputType="number"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tvNoOfPpl"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Select no. of People"
+        android:layout_below="@+id/etBillValue0" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/llNoOfPpl"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    android:layout_below="@id/tvNoOfPpl">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tvSeekbarCounter"
+        android:layout_weight="15"/>
+
+    <SeekBar
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sbNoPeople"
+        android:layout_weight="85"
+        android:max="10"
+        />
+</LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"
+        android:id="@+id/tvIndividualAmount"
+        android:layout_below="@+id/llNoOfPpl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:id="@+id/btExit"
+        android:layout_below="@+id/tvIndividualAmount"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/avListingMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/bottom_banner_on_main_activity" />
+
+</RelativeLayout>
