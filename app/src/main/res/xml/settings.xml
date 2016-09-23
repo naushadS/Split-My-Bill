@@ -10,6 +10,13 @@
             android:entries="@array/currency_list"
             android:entryValues="@array/currency_listValues"
             />
+        <ListPreference
+            android:title="Select Max Group Count"
+            android:key="peoplecount"
+            android:summary="Default:10"
+            android:entries="@array/People_Count"
+            android:entryValues="@array/People_CountValues"
+            />
 
     </PreferenceCategory>
 </PreferenceScreen>

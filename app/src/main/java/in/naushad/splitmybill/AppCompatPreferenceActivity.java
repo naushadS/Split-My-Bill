@@ -37,6 +37,10 @@ import android.view.ViewGroup;
  */
 public abstract class AppCompatPreferenceActivity extends PreferenceActivity {
     private AppCompatDelegate mDelegate;
+	static {
+        AppCompatDelegate.setDefaultNightMode(
+                AppCompatDelegate.MODE_NIGHT_AUTO);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         getDelegate().installViewFactory();
