@@ -9,7 +9,7 @@ USP:
 Also,there's an inbuilt feedback system.
 
 Download today!  
-http://bit.ly/splitmybill
+http://bit.ly/splitmybill1
 
 ![device-2016-03-21-181720_framed](https://cloud.githubusercontent.com/assets/7782134/13919208/18e3f6c6-ef92-11e5-9600-16b2a2287760.png)
 
