@@ -196,7 +196,7 @@ public class MainActivity extends AppCompatActivity {
         }else{
             Bundle basket = new Bundle();
             basket.putString("URLToOpen",SourceCodeURL);
-            basket.putString("WebpageTitle", "Len-Den (Source Code)");
+            basket.putString("WebpageTitle", "Split My Bill! (Source Code)");
             basket.putString("WebpageSubtitle", "Hosted by Github!");
             Intent person = new Intent(MainActivity.this,webViewFallback.class);
             person.putExtras(basket);
